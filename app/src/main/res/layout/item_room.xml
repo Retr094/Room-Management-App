@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvRoomItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:elevation="50dp"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvRoomNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="101"
+            android:textColor="@color/black"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem Ipsum"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRoomNo" />
+
+        <TextView
+            android:id="@+id/tvCheckInTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:text="@string/check_in"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tvRoomNo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChekInDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15/02/2022"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toEndOf="@id/tvCheckInTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChekInTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:25 AM"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/tvChekInDate"
+            app:layout_constraintTop_toBottomOf="@id/tvChekInDate" />
+
+
+        <TextView
+            android:id="@+id/tvCheckOutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/check_out"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/tvCheckInTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvChekInTime" />
+
+        <TextView
+            android:id="@+id/tvChekOutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="19/04/2022"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/tvChekInDate"
+            app:layout_constraintTop_toBottomOf="@id/tvChekInTime" />
+
+        <TextView
+            android:id="@+id/tvChekOutTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="04:50 PM"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@id/tvChekOutDate"
+            app:layout_constraintTop_toBottomOf="@id/tvChekOutDate" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

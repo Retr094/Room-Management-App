@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.pcandroiddev.roommanagementapp.ui.HomeFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_homeFragment_to_bookRoomFragment"
+            app:destination="@id/bookRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookRoomFragment"
+        android:name="com.pcandroiddev.roommanagementapp.ui.BookRoomFragment"
+        android:label="Book Room" >
+        <action
+            android:id="@+id/action_bookRoomFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

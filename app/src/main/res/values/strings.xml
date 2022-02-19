@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Room Management App</string>
+    <string name="book_new_room_button">Book New Room Button</string>
+    <string name="customer_name">Customer Name</string>
+    <string name="date_range">Stay Duration</string>
+    <string name="start_time">Start time</string>
+    <string name="end_time">End time</string>
+    <string name="room_number">Room Number</string>
+    <string name="book_room">Book Room</string>
+    <string name="check_in">Check In:</string>
+    <string name="check_out">Check Out:</string>
+
+    <string-array name="room_numbers">
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>
+        <item>108</item>
+        <item>109</item>
+        <item>110</item>
+    </string-array>
+
+</resources>
